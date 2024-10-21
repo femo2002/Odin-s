@@ -1,1 +1,1 @@
-# DEmo of sign-up form
+# Demo of sign-up form
