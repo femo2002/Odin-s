@@ -150,11 +150,19 @@ button {
     cursor: pointer;
     margin-top: 30px;
     margin-left: -5px;
-    transition: background-color .2s ease-in;
+    transition: background-color .5s ease-in;
+    box-shadow: 0 4px 0 #0056b3, 0 8px 0 #004085;
 }
 
 button:hover {
     background-color: red;
+    box-shadow: 0 2px 0 #0056b3, 0 4px 0 #004085; /* Lift effect */
+    transform: translateY(-3px); /* Move up slightly */
+}
+
+button:active {
+    box-shadow: 0 4px 0 #0056b3, 0 8px 0 #004085; /* Pressed effect */
+    transform: translateY(2px); /* Move down slightly */
 }
 
 footer {
@@ -173,7 +181,7 @@ footer a {
     }
  
     .right-side {
-        display: flex;
+        display: flex;  
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
@@ -182,6 +190,7 @@ footer a {
         width: 80vw;
         height: 75vh;
     }
+
     
 }
 @media (min-width:800px) and (max-width:1300px){
